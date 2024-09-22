@@ -4,13 +4,6 @@ import './styles.css'
 
 import WeatherResults from '../../components/WeatherResults'
 
-/*
-    - URL API
-        -> https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-    - KEY
-        -> 33ec52398376069920d49422361155d2
-
-*/
 function Home() {
 
     const [weather, setWeather] = useState()
@@ -19,8 +12,7 @@ function Home() {
 
     async function searchCity() {
         const inputCityValue = inputCity.current.value;
-        const key = '33ec52398376069920d49422361155d2';
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityValue}&appid=${key}&lang=pt_br&units=metric`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityValue}&appid=33ec52398376069920d49422361155d2&lang=pt_br&units=metric`
 
         const dataFromApi = await axios.get(url)
         setWeather(dataFromApi.data)
