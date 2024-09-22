@@ -1,3 +1,6 @@
+.page{
+    min-height: calc(100vh - 163px);
+}
 .search{
     padding: 7.5rem 0 2.5rem;
 

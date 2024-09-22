@@ -29,7 +29,7 @@ function Home() {
 
 
     return (
-        <>
+        <section className='page'>
             <section className="search">
                 <div className="container">
                     <div className="search__info">
@@ -50,7 +50,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-        </>)
+        </section>)
 }
 
 export default Home
