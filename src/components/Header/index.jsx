@@ -1,12 +1,16 @@
 import './styles.css'
+import Navigation from '../Navigation'
 
-function Header(){
+function Header() {
 
-    return(
+    return (
         <>
             <header className="header">
                 <div className="container">
-                    <h1 className="header__title">App Previsão do Tempo Dev</h1>
+                    <div className="header__content">
+                        <h1 className="header__title">App Previsão do Tempo Dev</h1>
+                        <Navigation />
+                    </div>
                 </div>
             </header>
         </>

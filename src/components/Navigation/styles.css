@@ -1,0 +1,19 @@
+.navigation{
+
+    .navigation__list{
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .navigation__link{
+        color: var(--gray-300);
+        text-decoration: none;
+
+        &:hover{
+            color: var(--blue-400);
+        }
+    }
+}
