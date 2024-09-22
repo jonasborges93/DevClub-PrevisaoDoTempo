@@ -25,24 +25,19 @@
 === End Variables Colors
 */
 }
+  
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-:focus{
-    outline: transparent;
-    box-shadow: 0 0 0 2px var(--blue-700);
-  }
-  
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: var(--gray-700);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--gray-400);
-    border-radius: 8px;
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--gray-700);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-400);
+  border-radius: 8px;
+}
 
 * {
     margin: 0;
