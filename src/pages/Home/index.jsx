@@ -3,19 +3,25 @@ import axios from 'axios'
 import './styles.css'
 
 import WeatherResults from '../../components/WeatherResults'
+import WeatherResults5Days from '../../components/WeatherResults5Days'
 
 function Home() {
 
     const [weather, setWeather] = useState()
+    const [weather5Days, setWeather5Days] = useState()
 
     const inputCity = useRef();
 
     async function searchCity() {
         const inputCityValue = inputCity.current.value;
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityValue}&appid=33ec52398376069920d49422361155d2&lang=pt_br&units=metric`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityValue}&appid=33ec52398376069920d49422361155d2&lang=pt_br&units=metric`;
+        const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${inputCityValue}&appid=33ec52398376069920d49422361155d2&lang=pt_br&units=metric`
 
         const dataFromApi = await axios.get(url)
+        const dataFromApi5Days = await axios.get(url5Days)
+
         setWeather(dataFromApi.data)
+        setWeather5Days(dataFromApi5Days.data)
     }
 
 
@@ -42,7 +48,16 @@ function Home() {
                     </div>
                 </div>
             </section>
-        </section>)
+
+            <section className="others-results">
+                <div className="container">
+                    <div className="others-results__content">
+                        {weather5Days && <WeatherResults5Days weather5Days={weather5Days}/>}
+                    </div>
+                </div>
+            </section>
+        </section>
+    )
 }
 
 export default Home

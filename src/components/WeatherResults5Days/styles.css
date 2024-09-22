@@ -1,55 +1,58 @@
-.current {
-    border: 2px solid var(--blue-700);
-    padding: 2.5rem;
+.days {
+    border: 2px solid var(--blue-400);
+    padding: 1.5rem 1rem;
     border-radius: .5rem;
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--gray-800);
+    background-color: var(--gray-700);
 
-    .current__name{
+    .days__date{
+        text-transform: capitalize;
         font-size: .85rem;
         text-align: center;
-    }
-
-    .current__name-city{
-        font-weight: bold;
-        color:var(--blue-400);
-    }
-
-    .current__name-date{
-        text-transform: capitalize;
-        text-align: center;
         color: var(--gray-100);
+        font-weight: bold;
     }
 
-    .current__group{
-        margin: 1.5rem 0 1rem;
+    .days__group{
+        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 
-    .current__temperature{
+    .days__icon{
+        display: block;
+    }
+
+    .days__temperature{
         font-size: 2.5rem;
         font-weight: bold;
         color: var(--blue-100);
+        text-align: center;
+
+        .days__temperature-text{
+            font-size: .8rem;
+            display: block;
+            font-weight: normal;
+        }
     }
 
-    .current__description{
+    .days__description{
         text-align: center;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-transform: capitalize;
         color:var(--blue-400);
     }
     
-    .current__information{
+    .days__information{
         text-align: center;
         margin-top: 1rem;
     }
-
-    .current__item{
+    .days__item{
         font-size: .75rem;
         color: var(--gray-400);
         

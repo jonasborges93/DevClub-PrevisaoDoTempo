@@ -80,9 +80,19 @@
 }
 
 .results{
+    padding-bottom: 2.5rem;
+}
+
+.others-results{
     padding-bottom: 7.5rem;
 
     @media(max-width:768px) {
         padding-bottom: 3.5rem;
+    }
+
+    .others-results__content{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 1rem;
     }
 }
