@@ -10,7 +10,7 @@ Descubra a previsão do tempo da sua cidade
 
 ## 🖥️ Projeto
 
-O App é um sistema para descobrir a previsão do tempo utilizando a API do OpenWeather, onde o usuário digita a cidade e aparece a previsão do dia atual e dos próximos 5 dias. [desse link](#).
+O App é um sistema para descobrir a previsão do tempo utilizando a API do OpenWeather, onde o usuário digita a cidade e aparece a previsão do dia atual e dos próximos 5 dias. [desse link](https://devclubjonasappprevisaodotempo.netlify.app/).
 
 
 ## 🚀 Tecnologias
