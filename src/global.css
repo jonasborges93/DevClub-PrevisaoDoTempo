@@ -45,6 +45,20 @@
     box-sizing: border-box;
 }
 
+html {
+  font-size: var(--size-default);
+}
+@media (max-width:1080px){
+  html {
+    font-size: 93.75%; /*15px*/
+  }
+}
+@media (max-width:768px){
+  html {
+    font-size: 87.5%; /*14px*/
+  }
+}
+
 body{
     background-color: var(--gray-900);
     color: var(--gray-300);

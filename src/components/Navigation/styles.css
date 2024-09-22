@@ -11,9 +11,15 @@
     .navigation__link{
         color: var(--gray-300);
         text-decoration: none;
+        
+        @media (max-width:768px){
+            font-size: .90rem;
+        }
 
         &:hover{
             color: var(--blue-400);
         }
+
+
     }
 }
