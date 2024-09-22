@@ -1,0 +1,22 @@
+.footer{
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--gray-800);
+    border-top: 1px solid var(--gray-600);
+
+    .footer__text{
+        font-size: .8rem;
+    }
+
+    .footer__link{
+        color: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        font-weight: bold;
+        transition: .3s ease;
+
+        &:hover{
+            color: var(--blue-400)
+        }
+    }
+}
